@@ -55,7 +55,7 @@ navbar.innerHTML =
                         <li><a href="${news}">Contact</a></li>
                         <li class="${cartVisibility}">
                             <i class="fa-solid fa-cart-shopping" style="font-size: 1.6rem; cursor: pointer;"
-                                id="cartButton"><span></span></i>
+                                id="cartButton"><span>0</span></i>
                         </li>
                     </ul>
                     <div class="cart">
