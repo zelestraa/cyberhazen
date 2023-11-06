@@ -29,7 +29,7 @@
                         opacity="0.44"></rect>
                     <rect width="366" height="3" x="414" y="335.5" rx="1.5" transform="rotate(47, 597, 337)"
                         opacity="0.28"></rect>
-                    <rect width="184" height="3" x="548" y="138.5" rx="1.5" transform="rotate(47, 640, 140)"
+                    <rect width="200" height="3" x="548" y="138.5" rx="1.5" transform="rotate(47, 640, 140)"
                         opacity="0.80"></rect>
                     <rect width="257" height="3" x="605.5" y="703.5" rx="1.5" transform="rotate(47, 734, 705)"
                         opacity="0.71"></rect>
@@ -137,7 +137,7 @@
                         opacity="0.39"></rect>
                     <rect width="166" height="3" x="26" y="151.5" rx="1.5" transform="rotate(47, 109, 153)"
                         opacity="0.34"></rect>
-                    <rect width="200" height="3" x="84" y="366.5" rx="1.5" transform="rotate(47, 184, 368)"
+                    <rect width="200" height="3" x="84" y="366.5" rx="1.5" transform="rotate(47, 200, 368)"
                         opacity="0.73"></rect>
                     <rect width="55" height="3" x="561.5" y="215.5" rx="1.5" transform="rotate(47, 589, 217)"
                         opacity="0.23"></rect>
@@ -203,7 +203,7 @@
                         opacity="0.47"></rect>
                     <rect width="90" height="3" x="577" y="772.5" rx="1.5" transform="rotate(47, 622, 774)"
                         opacity="0.51"></rect>
-                    <rect width="146" height="3" x="223" y="569.5" rx="1.5" transform="rotate(47, 296, 571)"
+                    <rect width="146" height="3" x="250" y="569.5" rx="1.5" transform="rotate(47, 296, 571)"
                         opacity="0.90"></rect>
                     <rect width="148" height="3" x="503" y="161.5" rx="1.5" transform="rotate(47, 577, 163)"
                         opacity="0.63"></rect>
@@ -257,7 +257,7 @@
                         opacity="0.76"></rect>
                     <rect width="257" height="3" x="-84.5" y="77.5" rx="1.5" transform="rotate(47, 44, 79)"
                         opacity="0.43"></rect>
-                    <rect width="240" height="3" x="184" y="231.5" rx="1.5" transform="rotate(47, 304, 233)"
+                    <rect width="240" height="3" x="200" y="231.5" rx="1.5" transform="rotate(47, 304, 233)"
                         opacity="0.63"></rect>
                     <rect width="32" height="3" x="4" y="130.5" rx="1.5" transform="rotate(47, 20, 132)" opacity="0.94">
                     </rect>

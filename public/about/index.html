@@ -6,58 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
-
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
-
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
-
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
     <title id="pagetitle">CyberHazen™ | About</title>
 </head>
 
 <body>
     <!--? ==== NAVBAR ==== -->
     <header>
-        <div class="container">
-            <div class="nav">
-                <div class="nav-logo">
-                    <a href="../">
-                        <h3>CyberHazen™</h3>
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="../">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="../menu/">Product</a></li>
-                        <li><a href="../news/">Contact</a></li>
-                    </ul>
-                    <div class="cart">
-                        <a href="../login">
-                            <div class="login" id="encryptButtonLogin">
-                                <div class="relative z-10 flex items-center gap-2">
-                                    <span id="textContentLogin">Login</span>
-                                </div>
-                                <span id="animationSpanLogin"
-                                    class="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-indigo-400/100 to-indigo-400/0 to-60% opacity-0 transition-opacity"></span>
-                            </div>
-                        </a>
-                        <div class="burger">
-                            <input type="checkbox" id="burgerClick">
-                            <span id="span1"></span>
-                            <span id="span2"></span>
-                            <span id="span3"></span>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
     </header>
     <!--! ==== NAVBAR END ==== -->
     <!--? ==== HERO ==== -->
-    <section class="home" id="home">
-        <div class="imggggg"></div>
+    <section class="home" id="home" >
+        <div class="homesvg" style="z-index: 10;">
+            <img src="../img/atom.svg" alt="" >
+        </div>
         <div class="container h-100 al-c">
             <div class="title">
                 <h1>Simplified Technology for a Complex World. </h1>
@@ -73,12 +35,12 @@
     </section>
     <!--! ==== HERO END ==== -->
     <!--? ==== MENU  SECTION ==== -->
-    <section class="menu" id="menu" style="background-color: white;">
-        <div class="container">
+    <section class="menu" id="menu" style="background-color: white;" data-scroll-container>
+        <div class="container" data-scroll-section>
             <div class="tit">
                 <h1>JOURNEY TIMELINE</h1>
             </div>
-            <div class="process-wrapper">
+            <div class="process-wrapper" data-scroll>
                 <div id="progress-bar-container">
                     <ul>
                         <li class="step step01 active">
@@ -173,8 +135,56 @@
         </div>
     </section>
     <!--! ==== MENU END ==== -->
-    <section id="mission">
+    <section>
         <div class="container">
+            <div class="vision-box">
+                <div class="vision">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="195" height="195" viewBox="0 0 195 195" fill="none"
+                        class="visionicon">
+                        <path
+                            d="M40.9727 123.227C40.9727 127.278 39.7712 131.238 37.5202 134.607C35.2692 137.975 32.0699 140.601 28.3267 142.151C24.5836 143.701 20.4649 144.106 16.4915 143.315C12.5181 142.524 8.86854 140.572 6.00437 137.707C3.1402 134.842 1.19009 131.191 0.400695 127.218C-0.388701 123.244 0.0180765 119.125 1.56958 115.383C3.12108 111.64 5.74761 108.442 9.11697 106.192C12.4863 103.943 16.4472 102.743 20.4985 102.744H40.9727V123.227ZM51.291 123.227C51.291 117.793 53.4494 112.583 57.2913 108.741C61.1332 104.899 66.344 102.74 71.7773 102.74C77.2106 102.74 82.4214 104.899 86.2633 108.741C90.1053 112.583 92.2636 117.793 92.2636 123.227V174.518C92.2636 179.95 90.1057 185.16 86.2645 189.001C82.4234 192.842 77.2136 195 71.7814 195C66.3491 195 61.1394 192.842 57.2982 189.001C53.4571 185.16 51.2991 179.95 51.2991 174.518L51.291 123.227ZM71.7814 40.9727C67.73 40.9727 63.7697 39.7712 60.4012 37.5202C57.0327 35.2692 54.4075 32.0699 52.8575 28.3267C51.3074 24.5836 50.9023 20.4649 51.6933 16.4915C52.4842 12.5181 54.4358 8.86854 57.3011 6.00437C60.1664 3.1402 63.8168 1.19009 67.7905 0.400695C71.7642 -0.388701 75.8827 0.0180765 79.6252 1.56958C83.3677 3.12108 86.5661 5.74761 88.8157 9.11697C91.0654 12.4863 92.2653 16.4472 92.2636 20.4985V40.9727H71.7814ZM71.7814 51.291C77.2147 51.291 82.4255 53.4494 86.2674 57.2913C90.1093 61.1332 92.2677 66.344 92.2677 71.7773C92.2677 77.2106 90.1093 82.4214 86.2674 86.2633C82.4255 90.1053 77.2147 92.2636 71.7814 92.2636H20.4823C15.05 92.2636 9.84029 90.1057 5.99912 86.2645C2.15795 82.4234 0 77.2136 0 71.7814C0 66.3491 2.15795 61.1394 5.99912 57.2982C9.84029 53.4571 15.05 51.2991 20.4823 51.2991L71.7814 51.291ZM154.035 71.7814C154.035 67.73 155.237 63.7697 157.488 60.4012C159.739 57.0327 162.938 54.4075 166.681 52.8575C170.424 51.3074 174.543 50.9023 178.517 51.6933C182.49 52.4842 186.14 54.4358 189.004 57.3011C191.868 60.1664 193.818 63.8168 194.607 67.7905C195.397 71.7642 194.99 75.8827 193.439 79.6252C191.887 83.3677 189.261 86.5661 185.891 88.8157C182.522 91.0654 178.561 92.2653 174.51 92.2636H154.035V71.7814ZM143.717 71.7814C143.717 77.2147 141.559 82.4255 137.717 86.2674C133.875 90.1093 128.664 92.2677 123.231 92.2677C117.797 92.2677 112.587 90.1093 108.745 86.2674C104.903 82.4255 102.744 77.2147 102.744 71.7814V20.4823C102.744 15.05 104.902 9.84029 108.744 5.99912C112.585 2.15795 117.795 0 123.227 0C128.659 0 133.869 2.15795 137.71 5.99912C141.551 9.84029 143.709 15.05 143.709 20.4823L143.717 71.7814ZM123.227 154.035C127.278 154.035 131.238 155.237 134.607 157.488C137.975 159.739 140.601 162.938 142.151 166.681C143.701 170.424 144.106 174.543 143.315 178.517C142.524 182.49 140.572 186.14 137.707 189.004C134.842 191.868 131.191 193.818 127.218 194.607C123.244 195.397 119.125 194.99 115.383 193.439C111.64 191.887 108.442 189.261 106.192 185.891C103.943 182.522 102.743 178.561 102.744 174.51V154.035H123.227ZM123.227 143.717C117.793 143.717 112.583 141.559 108.741 137.717C104.899 133.875 102.74 128.664 102.74 123.231C102.74 117.797 104.899 112.587 108.741 108.745C112.583 104.903 117.793 102.744 123.227 102.744H174.518C179.95 102.744 185.16 104.902 189.001 108.744C192.842 112.585 195 117.795 195 123.227C195 128.659 192.842 133.869 189.001 137.71C185.16 141.551 179.95 143.709 174.518 143.709L123.227 143.717Z"
+                            fill="var(--dark)" />
+                    </svg>
+                    <h2>
+                        Vision Statement:
+                    </h2>
+                    <p>
+                        "Envisioning a world where technology is an empowering force for all, Hazen Technologies is
+                        committed to pioneering innovation that simplifies and enhances lives. Our vision is to lead the
+                        way
+                        in reshaping the future of technology, making it accessible, sustainable, and a catalyst for
+                        positive change. <br>
+                        To be a global leader in technology, pioneering advancements that address real-world challenges
+                        and drive positive change. We aspire to inspire and empower the world with our technological
+                        innovations."
+                    </p>
+                </div>
+            </div>
+            <div class="mision-box">
+                <div class="mision">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="195" height="210" viewBox="0 0 195 210" fill="none"
+                        class="misionicon">
+                        <path opacity="0.2"
+                            d="M7.5 102.846L52.5 127.474V178.886L11.4 156.386C10.222 155.742 9.23861 154.793 8.55259 153.639C7.86657 152.484 7.50305 151.167 7.5 149.824V102.846ZM142.5 127.474V178.886L183.6 156.386C184.778 155.742 185.761 154.793 186.447 153.639C187.133 152.484 187.497 151.167 187.5 149.824V102.855L142.5 127.474ZM93.9 8.41145L55.4625 29.4677L97.5 52.474L139.556 29.449L101.1 8.41145C99.9962 7.80751 98.7582 7.49097 97.5 7.49097C96.2418 7.49097 95.0038 7.80751 93.9 8.41145Z"
+                            fill="var(--dark)" />
+                        <path
+                            d="M187.2 46.9895L104.7 1.84888C102.494 0.635969 100.017 0 97.5 0C94.9826 0 92.506 0.635969 90.3 1.84888L7.8 47.0176C5.44395 48.3067 3.47722 50.2048 2.10517 52.5135C0.733127 54.8222 0.00609617 57.457 0 60.1426V149.805C0.00609617 152.491 0.733127 155.126 2.10517 157.434C3.47722 159.743 5.44395 161.641 7.8 162.93L90.3 208.09C92.5043 209.308 94.9816 209.946 97.5 209.946C100.018 209.946 102.496 209.308 104.7 208.09L187.2 162.93C189.556 161.641 191.523 159.743 192.895 157.434C194.267 155.126 194.994 152.491 195 149.805V60.1426C194.999 57.4522 194.274 54.8116 192.902 52.4975C191.53 50.1833 189.56 48.2809 187.2 46.9895ZM135 127.474V174.433L105 190.858V109.418L180 68.3551V98.3551L138.9 120.855C137.714 121.504 136.725 122.462 136.038 123.627C135.352 124.792 134.993 126.122 135 127.474ZM56.1 120.911L15 98.4114V68.4114L90 109.474V190.915L60 174.433V127.474C59.997 126.131 59.6334 124.814 58.9474 123.659C58.2614 122.505 57.278 121.556 56.1 120.911ZM55.4437 38.027L93.8812 59.0739C94.985 59.6778 96.223 59.9944 97.4813 59.9944C98.7395 59.9944 99.9775 59.6778 101.081 59.0739L139.519 38.027L171.844 55.7176L97.5 96.4239L23.1187 55.6989L55.4437 38.027ZM97.5 14.9739L123.937 29.4489L97.5 43.9333L71.0625 29.4583L97.5 14.9739ZM15 115.493L45 131.918V166.221L15 149.805V115.493ZM150 166.221V131.918L180 115.493V149.805L150 166.221Z"
+                            fill="var(--dark)" />
+                    </svg>
+                    <h2>
+                        Mission Statement:
+                    </h2>
+                    <p>
+                        "At Hazen Technologies, our mission is to simplify, innovate, and empower. We strive to create
+                        technology that is user-centric, environmentally responsible, and a driver of progress. We are
+                        dedicated to providing cutting-edge solutions that enhance well-being, elevate experiences, and
+                        enrich lives. Our commitment is to make the complex simple, the advanced accessible, and the
+                        future brighter for everyone.<br>
+                        To empower individuals, businesses, and communities through technology by delivering innovative,
+                        reliable, and sustainable solutions that enhance efficiency, convenience, and quality of life."
+                    </p>
+                </div>
+            </div>
             <div class="roww">
                 <a href="/">
                     <button class="btncustom">
@@ -231,8 +241,8 @@
                 </a>
                 <a href="/">
                     <button class="btncustom">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="92" height="105" viewBox="0 0 92 105"
-                            fill="none" class="btn-icon-back">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="92" height="105" viewBox="0 0 92 105" fill="none"
+                            class="btn-icon-back">
                             <g clip-path="url(#clip0_411_91)">
                                 <path
                                     d="M62.3467 26.25C62.3467 21.8988 60.6182 17.7258 57.5414 14.649C54.4646 11.5723 50.2916 9.84375 45.9404 9.84375C41.5892 9.84375 37.4162 11.5723 34.3395 14.649C31.2627 17.7258 29.5342 21.8988 29.5342 26.25C29.5342 30.6012 31.2627 34.7742 34.3395 37.851C37.4162 40.9277 41.5892 42.6562 45.9404 42.6562C50.2916 42.6562 54.4646 40.9277 57.5414 37.851C60.6182 34.7742 62.3467 30.6012 62.3467 26.25ZM19.6904 26.25C19.6904 19.2881 22.456 12.6113 27.3789 7.68845C32.3017 2.76562 38.9785 0 45.9404 0C52.9024 0 59.5792 2.76562 64.502 7.68845C69.4248 12.6113 72.1904 19.2881 72.1904 26.25C72.1904 33.2119 69.4248 39.8887 64.502 44.8116C59.5792 49.7344 52.9024 52.5 45.9404 52.5C38.9785 52.5 32.3017 49.7344 27.3789 44.8116C22.456 39.8887 19.6904 33.2119 19.6904 26.25ZM10.1133 95.1562H81.7676C79.9424 82.1748 68.7861 72.1875 55.3125 72.1875H36.5684C23.0947 72.1875 11.9385 82.1748 10.1133 95.1562ZM0.00292969 98.9092C0.00292969 78.709 16.3682 62.3438 36.5684 62.3438H55.3125C75.5127 62.3438 91.8779 78.709 91.8779 98.9092C91.8779 102.272 89.1504 105 85.7871 105H6.09375C2.73047 105 0.00292969 102.272 0.00292969 98.9092Z"
@@ -250,116 +260,15 @@
                     </button>
                 </a>
             </div>
+
         </div>
     </section>
     <!--? ==== FOOTER ==== -->
     <footer>
-        <div class="container">
-            <p style="padding: 0 40px 30px 24px;">Hazen Technologies is a forward-thinking technology company committed
-                to innovating and engineering
-                cutting-edge solutions that shape the future. With a relentless dedication to excellence and a passion
-                for pushing the boundaries of what's possible, Hazen Technologies is at the forefront of creating
-                transformative products and services that drive progress in various industries.
-                <br>
-                Our Mission:
-                To empower individuals, businesses, and communities through technology by delivering innovative,
-                reliable, and sustainable solutions that enhance efficiency, convenience, and quality of life.
-                <br>
-                Our Vision:
-                To be a global leader in technology, pioneering advancements that address real-world challenges and
-                drive positive change. We aspire to inspire and empower the world with our technological innovations.
-            </p>
-            <hr style="border: 1.5px solid var(--quad);width: 96%; margin: auto;border-radius: 2px;">
-            <div class="footer-grid">
-                <div class="footer-item">
-                    <div class="nav-logo">
-                        <a href="/">
-                            <h1>CyberHazen™</h1>
-                        </a>
-                    </div>
-                    <p>We are a dynamic team of visionaries, engineers, and creatives who thrive on challenges. Our
-                        passion lies in developing technology-intensive products and services that shape the future.</p>
-                    <br>
-                    <h1>Special Event</h1>
-                    <a href="/about/" class="link">About</a>
-                    <a href="#" class="link">Special Event</a>
-                    <a href="#" class="link">Exclusive Event</a>
-                    <a href="#" class="link">Monthly Event</a>
-                    <a href="#" class="link">Yearly Event</a>
-                    <br>
-                    <h1>Home Electonics</h1>
-                    <a href="/menu/#phones" class="link">Hazen SmartHome Hub</a>
-                    <a href="/menu/#phones" class="link">Hazen E-Cars</a>
-                    <a href="/menu/#phones" class="link">Hazen AI Assist</a><br>
-                    <h1>Social Media</h1>
-                    <div class="sosmed">
-                        <a href="https://facebook.com"><i class="fa-brands fa-facebook-f link"></i></a>
-                        <a href="https://instagram.com"><i class="fa-brands fa-instagram link"></i></a>
-                        <a href="https://twitter.com"><i class="fa-brands fa-x-twitter link"></i></a>
-                        <a href="https://pinterest.com"><i class="fa-brands fa-pinterest-p link"></i></a>
-                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in link"></i></a>
-                        <a href="https://dribble.com"><i class="fa-brands fa-dribbble link"></i></a>
-                        <a href="https://fontawesome.com"><i class="fa-brands fa-font-awesome link"></i></a>
-                        <a href="https://izzulaverroes.github.io/cyberhazen"><i
-                                class="fa-brands fa-github link"></i></a>
-                        <a href="https://npm.com"><i class="fa-brands fa-npm link"></i></a>
-                        <a href="https://.com"><i class="fa-regular fa-globe link"></i></a><br>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <h1>Contact Us</h1>
-                    <h4>Phone Number :</h4>
-                    <p> +62 813 3644 6666</p>
-                    <h4>Email :</h4>
-                    <p> ceo@hazen.tech</p>
-                    <h4>Company Address:</h4>
-                    <p> Malang, East Java, Indonesia </p><br>
-                    <h1>Handphones</h1>
-                    <a href="/menu/#phones" class="link">Hazen Z-One</a>
-                    <a href="/menu/#phones" class="link">Hazen Z-One Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen Z-One Photography</a>
-                    <a href="/menu/#phones" class="link">Hazen G-One Titan</a>
-                    <a href="/menu/#phones" class="link">Hazen X-One</a>
-                    <a href="/menu/#phones" class="link">Hazen Flip-V</a><br>
-                    <h1>Computers</h1>
-                    <a href="/menu/#phones" class="link">Hazen Quantum Servers</a>
-                    <a href="/menu/#phones" class="link">Hazen Desktop Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen Gaming Titan Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen X-Titan Max</a>
-                    <a href="/menu/#phones" class="link">Hazen NovaX</a>
-                    <a href="/menu/#phones" class="link">Hazen Classic Desktop</a>
-                </div>
-                <div class="footer-item">
-                    <h1>Viewer Guides</h1>
-                    <a href="#home">Home</a>
-                    <a href="/menu/">Menu</a>
-                    <a href="/about/">About</a>
-                    <a href="/news/">News</a><br>
-                    <h1>Laptops</h1>
-                    <a href="/menu/#phones" class="link">Hazen Quantum Lite</a>
-                    <a href="/menu/#phones" class="link">Hazen Gaming Titan</a>
-                    <a href="/menu/#phones" class="link">Hazen Titan Servers</a>
-                    <a href="/menu/#phones" class="link">Hazen X-Desktop</a>
-                    <a href="/menu/#phones" class="link">Hazen Creator Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen Aero Slim</a>
-                    <a href="/menu/#phones" class="link">Hazen EdgeBook</a>
-                    <a href="/menu/#phones" class="link">Hazen EvoMax</a><br>
-                    <h1>Sounds</h1>
-                    <a href="/menu/#phones" class="link">Hazen VR Headset 3.0</a>
-                    <a href="/menu/#phones" class="link">Hazen Buds Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen Pro Sounds </a>
-                    <a href="/menu/#phones" class="link">Hazen Sounds Mixer</a>
-                </div>
-            </div>
-            <hr style="border: 1.5px solid var(--quad); margin: auto;border-radius: 2px;">
-            <div style="display: flex;justify-content: space-between;">
-                <p style="text-align: left;padding: 10px 0;">Copyright © 2023 CyberHazen™ Technologies LTD &emsp;
-                    Privacy Policy | Terms of Use | Sales and Refunds </p>
-                <p style="padding: 10px 0;">Indonesia | United States</p>
-            </div>
-        </div>
     </footer>
     <!--! ==== FOOTER END ==== -->
+    <script type="module" src="../js/navbar.js"></script>
+    <script type="module" src="../js/footer.js"></script>
     <script type="module" src="../js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -394,6 +303,12 @@
             $("#line-progress").css("width", "100%");
             $(".analysis").addClass("active").siblings().removeClass("active");
         });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+        (function () {
+            var scroll = new LocomotiveScroll();
+        })();
     </script>
 </body>
 

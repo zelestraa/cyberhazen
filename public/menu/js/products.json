@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "name":"Hazen ",
+        "price": 200,
+        "image": "../img/phone.svg",
+        "des":"lorem ipsum dolor sit amet consonsi oasdo oaoj"
+    },
+    {
+        "id": 2,
+        "name":"Hazen ",
+        "price": 250,
+        "image": "../img/laptop.svg",
+        "des":"lorem ipsum dolor sit amet consonsi oasdo oaoj"
+    },
+    {
+        "id": 3,
+        "name":"Hazen ",
+        "price": 290,
+        "image": "../img/headset.svg",
+        "des":"lorem ipsum dolor sit amet consonsi oasdo oaoj"
+    },
+    {
+        "id": 4,
+        "name":"Hazen ",
+        "price": 200,
+        "image": "../img/server.svg",
+        "des":"lorem ipsum dolor sit amet consonsi oasdo oaoj"
+    },
+    {
+        "id": 5,
+        "name":"Hazen ",
+        "price": 300,
+        "image": "../img/computer.svg",
+        "des":"lorem ipsum dolor sit amet consonsi oasdo oaoj"
+    },
+    {
+        "id": 6,
+        "name":"Hazen ",
+        "price": 200,
+        "image": "../img/console.svg",
+        "des":"lorem ipsum dolor sit amet consonsi oasdo oaoj"
+    },
+    {
+        "id": 7,
+        "name":"Hazen ",
+        "price": 200,
+        "image": "../img/nintendo.svg",
+        "des":"lorem ipsum dolor sit amet consonsi oasdo oaoj"
+    },
+    {
+        "id": 8,
+        "name":"Hazen ",
+        "price": 200,
+        "image": "../img/vr.svg",
+        "des":"lorem ipsum dolor sit amet consonsi oasdo oaoj"
+    }
+
+]

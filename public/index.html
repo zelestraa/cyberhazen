@@ -13,45 +13,15 @@
 <body>
     <!--? ==== NAVBAR ==== -->
     <header>
-        <div class="container">
-            <div class="nav">
-                <div class="nav-logo">
-                    <a href="#">
-                        <h3>CyberHazen™</h3>
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="about/">About</a></li>
-                        <li><a href="menu/">Product</a></li>
-                        <li><a href="news/">Contact</a></li>
-                    </ul>
-                    <div class="cart">
-                        <a href="login/">
-                            <div class="login" id="encryptButtonLogin">
-                                <div class="relative z-10 flex items-center gap-2">
-                                    <span id="textContentLogin">Login</span>
-                                </div>
-                                <span id="animationSpanLogin"
-                                    class="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-indigo-400/100 to-indigo-400/0 to-60% opacity-0 transition-opacity"></span>
-                            </div>
-                        </a>
-                        <div class="burger">
-                            <input type="checkbox" id="burgerClick">
-                            <span id="span1"></span>
-                            <span id="span2"></span>
-                            <span id="span3"></span>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
     </header>
     <!--! ==== NAVBAR END ==== -->
     <!--? ==== HERO ==== -->
     <section class="home" id="home">
         <div class="container h-100 al-c">
+            <div class="homesvg">
+                <img src="img/react.svg" alt="">
+                </svg>
+            </div>
             <div class="title">
                 <h1>Empowering Tomorrow with Cutting-Edge Solutions</h1>
                 <p>At CyberHazen™, we’re not just another technology company. We’re the architects of progress,
@@ -219,179 +189,7 @@
             </div>
             <div class="m">
                 <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="menu-item" id="tiltCard">
-                                <div class="svg" id="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="184" height="223"
-                                        viewBox="0 0 184 223" fill="none">
-                                        <rect width="184" height="222.208" rx="26" fill="var(--primary)" />
-                                        <path
-                                            d="M115.522 168.257C119.059 168.257 122.451 166.847 124.952 164.338C127.452 161.829 128.857 158.427 128.857 154.879L128.857 66.378C128.857 62.8299 127.452 59.4271 124.952 56.9183C122.451 54.4094 119.059 53 115.522 53L68.3353 53C64.7986 53 61.4066 54.4094 58.9058 56.9183C56.4049 59.4272 54.9999 62.8299 54.9999 66.378L55 154.879C55 158.427 56.4049 161.829 58.9058 164.338C61.4067 166.847 64.7986 168.257 68.3353 168.257L115.522 168.257ZM120.651 154.879C120.651 157.719 118.353 160.024 115.522 160.024L68.3353 160.024C65.5041 160.024 63.2063 157.719 63.2063 154.879L63.2063 66.378C63.2063 63.5377 65.5041 61.2326 68.3353 61.2326L115.522 61.2326C118.353 61.2326 120.651 63.5377 120.651 66.378L120.651 154.879ZM100.135 77.6978C101.223 77.6978 102.267 77.2641 103.036 76.4922C103.806 75.7202 104.238 74.6732 104.238 73.5815C104.238 72.4898 103.806 71.4428 103.036 70.6708C102.267 69.8989 101.223 69.4652 100.135 69.4652L83.7223 69.4652C82.6341 69.4652 81.5904 69.8989 80.8209 70.6708C80.0514 71.4428 79.6191 72.4898 79.6191 73.5815C79.6191 74.6732 80.0514 75.7202 80.8209 76.4922C81.5904 77.2641 82.6341 77.6978 83.7223 77.6978L100.135 77.6978Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="des" id="icon">
-                                    <h3>Hazen Z-One</h3>
-                                    <p>Display: 6.5-inch OLED with 120Hz refresh rate
-                                        Processor: Hazen A1 chipset
-                                        RAM: 8GB
-                                        Storage: 128GB/256GB/512GB.</p>
-                                    <div class="price">
-                                        <p>$ 1200 USD</p>
-                                        <a href="/menu/">
-                                            <div class="buy">
-                                                BUY
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="menu-item">
-                                <div class="svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="184" height="223"
-                                        viewBox="0 0 184 223" fill="none">
-                                        <rect width="184" height="222.208" rx="26" fill="var(--primary)" />
-                                        <path
-                                            d="M60 69C65.3923 68.9933 70.5806 71.0611 74.49 74.775C78.3994 78.489 80.7304 83.5644 81 88.95V145.125C81 147.214 80.1703 149.217 78.6935 150.693C77.2166 152.17 75.2136 153 73.125 153C71.0364 153 69.0334 152.17 67.5565 150.693C66.0797 149.217 65.25 147.214 65.25 145.125V111H60C54.6077 111.007 49.4194 108.939 45.51 105.225C41.6006 101.511 39.2696 96.4356 39 91.05V90C39 84.4305 41.2125 79.089 45.1508 75.1508C49.089 71.2125 54.4305 69 60 69ZM123 69C117.608 68.9933 112.419 71.0611 108.51 74.775C104.601 78.489 102.27 83.5644 102 88.95V145.125C102 147.214 102.83 149.217 104.307 150.693C105.783 152.17 107.786 153 109.875 153C111.964 153 113.967 152.17 115.443 150.693C116.92 149.217 117.75 147.214 117.75 145.125V111H123C128.392 111.007 133.581 108.939 137.49 105.225C141.399 101.511 143.73 96.4356 144 91.05V90C144 84.4305 141.788 79.089 137.849 75.1508C133.911 71.2125 128.57 69 123 69Z"
-                                            stroke="white" stroke-width="8" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                                <div class="des">
-                                    <h3>Hazen Buds Pro</h3>
-                                    <p>An advanced virtual reality headset for immersive gaming and experiences.</p><br>
-                                    <div class="price">
-                                        <p>$ 799 USD</p>
-                                        <a href="/menu/">
-                                            <div class="buy">
-                                                BUY
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="menu-item">
-                                <div class="svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="184" height="223"
-                                        viewBox="0 0 184 223" fill="none">
-                                        <rect width="184" height="222.208" rx="26" fill="var(--primary)" />
-                                        <path
-                                            d="M147 103.789V142.842C147 145.801 145.82 148.639 143.72 150.732C141.619 152.824 138.77 154 135.8 154H124.6C121.63 154 118.781 152.824 116.68 150.732C114.58 148.639 113.4 145.801 113.4 142.842V114.947C113.4 111.988 114.58 109.15 116.68 107.058C118.781 104.965 121.63 103.789 124.6 103.789H135.8C135.8 91.9524 131.08 80.6002 122.678 72.2302C114.277 63.8601 102.882 59.1579 91 59.1579C79.1183 59.1579 67.7232 63.8601 59.3216 72.2302C50.92 80.6002 46.2 91.9524 46.2 103.789H57.4C60.3704 103.789 63.2192 104.965 65.3196 107.058C67.42 109.15 68.6 111.988 68.6 114.947V142.842C68.6 145.801 67.42 148.639 65.3196 150.732C63.2192 152.824 60.3704 154 57.4 154H46.2C43.2296 154 40.3808 152.824 38.2804 150.732C36.18 148.639 35 145.801 35 142.842V103.789C35 72.9769 60.0712 48 91 48C121.929 48 147 72.9769 147 103.789Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="des">
-                                    <h3>Hazen VR Headset 3.0</h3>
-                                    <p>Headset Type: Virtual Reality (VR) headset
-                                        Display: High-resolution OLED screens
-                                        Tracking: Inside-out-of.</p>
-                                    <div class="price">
-                                        <p>$ 1099 USD</p>
-                                        <a href="/menu/">
-                                            <div class="buy">
-                                                BUY
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="menu-item">
-                                <div class="svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="184" height="223"
-                                        viewBox="0 0 184 223" fill="none">
-                                        <rect width="184" height="222.208" rx="26" fill="var(--primary)" />
-                                        <path
-                                            d="M131.608 111.145C131.608 98.6256 125.762 87.4374 116.673 80.2415L111.956 52H72.652L67.9847 80.2415C58.8465 87.4374 53 98.5763 53 111.145C53 123.713 58.8465 134.852 67.9847 142.048L72.652 170.289H111.956L116.673 142.048C121.331 138.366 125.095 133.672 127.682 128.319C130.269 122.966 131.612 117.094 131.608 111.145ZM62.826 111.145C62.826 94.8305 76.042 81.5723 92.3041 81.5723C108.566 81.5723 121.782 94.8305 121.782 111.145C121.782 127.459 108.566 140.717 92.3041 140.717C76.042 140.717 62.826 127.459 62.826 111.145Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                                <div class="des">
-                                    <h3>Hazen Monitor Watch</h3>
-                                    <p>A smartwatch for health and fitness tracking and always ready to help you .</p>
-                                    <br>
-                                    <div class="price">
-                                        <p>$ 1099 USD</p>
-                                        <a href="/menu/">
-                                            <div class="buy">
-                                                BUY
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="menu-item">
-                                <div class="svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="184" height="223"
-                                        viewBox="0 0 184 223" fill="none">
-                                        <rect width="184" height="222.208" rx="26" fill="var(--primary)" />
-                                        <path
-                                            d="M159.5 81H68.5C64.9102 81 62 78.0898 62 74.5V61.5C62 57.9102 64.9102 55 68.5 55H159.5C163.09 55 166 57.9102 166 61.5V74.5C166 78.0898 163.09 81 159.5 81ZM149.75 63.125C147.058 63.125 144.875 65.3076 144.875 68C144.875 70.6924 147.058 72.875 149.75 72.875C152.442 72.875 154.625 70.6924 154.625 68C154.625 65.3076 152.442 63.125 149.75 63.125ZM136.75 63.125C134.058 63.125 131.875 65.3076 131.875 68C131.875 70.6924 134.058 72.875 136.75 72.875C139.442 72.875 141.625 70.6924 141.625 68C141.625 65.3076 139.442 63.125 136.75 63.125ZM159.5 113.5H68.5C64.9102 113.5 62 110.59 62 107V94C62 90.4102 64.9102 87.5 68.5 87.5H159.5C163.09 87.5 166 90.4102 166 94V107C166 110.59 163.09 113.5 159.5 113.5ZM149.75 95.625C147.058 95.625 144.875 97.8076 144.875 100.5C144.875 103.192 147.058 105.375 149.75 105.375C152.442 105.375 154.625 103.192 154.625 100.5C154.625 97.8076 152.442 95.625 149.75 95.625ZM136.75 95.625C134.058 95.625 131.875 97.8076 131.875 100.5C131.875 103.192 134.058 105.375 136.75 105.375C139.442 105.375 141.625 103.192 141.625 100.5C141.625 97.8076 139.442 95.625 136.75 95.625ZM159.5 146H68.5C64.9102 146 62 143.09 62 139.5V126.5C62 122.91 64.9102 120 68.5 120H159.5C163.09 120 166 122.91 166 126.5V139.5C166 143.09 163.09 146 159.5 146ZM149.75 128.125C147.058 128.125 144.875 130.308 144.875 133C144.875 135.692 147.058 137.875 149.75 137.875C152.442 137.875 154.625 135.692 154.625 133C154.625 130.308 152.442 128.125 149.75 128.125ZM136.75 128.125C134.058 128.125 131.875 130.308 131.875 133C131.875 135.692 134.058 137.875 136.75 137.875C139.442 137.875 141.625 135.692 141.625 133C141.625 130.308 139.442 128.125 136.75 128.125Z"
-                                            fill="white" />
-                                        <path
-                                            d="M111.778 163.813H29.3469C29.346 163.813 29.3452 163.812 29.3443 163.812C27.53 163.81 25.7908 163.088 24.5079 161.805C23.2248 160.521 22.5028 158.782 22.5 156.967V112.345C22.5028 110.53 23.2248 108.791 24.5079 107.508C25.791 106.225 27.5305 105.503 29.345 105.5H111.78C113.595 105.503 115.334 106.225 116.617 107.508C117.901 108.791 118.623 110.532 118.625 112.347V156.966C118.623 158.781 117.901 160.521 116.617 161.805C115.334 163.088 113.595 163.81 111.781 163.812C111.78 163.812 111.779 163.813 111.778 163.813Z"
-                                            fill="white" stroke="var(--primary)" stroke-width="7" />
-                                        <path d="M44 167H99Z" fill="white" />
-                                        <path d="M44 167H99" stroke="white" stroke-width="6" stroke-miterlimit="10"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                </div>
-                                <div class="des">
-                                    <h3>Hazen Quantum Server</h3>
-                                    <p>Quantum parallelism, and superposition for complex computations.
-                                    </p><br>
-                                    <div class="price">
-                                        <p>$ 1099 USD</p>
-                                        <a href="/menu/">
-                                            <div class="buy">
-                                                BUY
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="menu-item">
-                                <div class="svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="184" height="223"
-                                        viewBox="0 0 184 223" fill="none">
-                                        <rect width="184" height="222.208" rx="26" fill="var(--primary)" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M54.3896 107.979C54.3896 107.067 54.7518 106.193 55.3965 105.548C56.0411 104.904 56.9155 104.542 57.8271 104.542C82.5313 104.542 102.551 124.548 102.551 149.229C102.551 150.141 102.189 151.016 101.544 151.661C100.899 152.307 100.024 152.669 99.1115 152.669C98.1992 152.669 97.3243 152.307 96.6792 151.661C96.0341 151.016 95.6717 150.141 95.6717 149.229C95.6717 128.347 78.7271 111.417 57.8271 111.417C56.9155 111.417 56.0411 111.054 55.3965 110.41C54.7518 109.765 54.3896 108.891 54.3896 107.979ZM57.8271 118.292C56.9155 118.292 56.0411 118.654 55.3965 119.298C54.7518 119.943 54.3896 120.817 54.3896 121.729C54.3896 122.641 54.7518 123.515 55.3965 124.16C56.0411 124.804 56.9155 125.167 57.8271 125.167C60.9883 125.165 64.1187 125.787 67.0397 126.995C69.9606 128.204 72.615 129.976 74.8511 132.211C77.0872 134.445 78.8613 137.098 80.0721 140.018C81.283 142.938 81.9068 146.068 81.908 149.229C81.908 150.142 82.2706 151.018 82.9161 151.663C83.5617 152.309 84.4372 152.671 85.3501 152.671C86.263 152.671 87.1385 152.309 87.784 151.663C88.4295 151.018 88.7921 150.142 88.7921 149.229C88.7903 145.165 87.988 141.14 86.4309 137.386C84.8738 133.631 82.5924 130.22 79.717 127.347C76.8417 124.475 73.4286 122.196 69.6727 120.642C65.9169 119.089 61.8917 118.29 57.8271 118.292Z"
-                                            fill="white" />
-                                        <path
-                                            d="M52.167 99.3533C53.7941 98.29 55.742 97.6667 57.8274 97.6667C86.3266 97.6667 109.436 120.753 109.436 149.229C109.436 150.435 109.225 151.59 108.844 152.667C125.01 152.662 133.264 152.483 138.462 147.112C143.834 141.557 143.834 132.619 143.834 114.74V107.768C143.834 97.2771 143.834 92.0337 141.45 87.6887C139.067 83.3392 134.722 80.6442 126.018 75.245L116.838 69.5571C107.644 63.8508 103.047 61 97.9637 61C92.8807 61 88.2837 63.8508 79.0803 69.5571L69.9137 75.245C61.2053 80.6442 56.8557 83.3392 54.477 87.6887C52.8362 90.6817 52.3228 94.0962 52.167 99.3533Z"
-                                            fill="white" />
-                                        <path
-                                            d="M41 161.833V145.833C41 143.712 41.8128 141.677 43.2595 140.177C44.7062 138.676 46.6683 137.833 48.7143 137.833C50.7602 137.833 52.7224 138.676 54.1691 140.177C55.6158 141.677 56.4286 143.712 56.4286 145.833V161.833M41 153.833H56.4286M68 137.833V161.833"
-                                            stroke="white" stroke-width="5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                                <div class="des">
-                                    <h3>Hazen SmartHome Hub</h3>
-                                    <p>The Hazen SmartHome Hub is a central control unit that connects and manages all
-                                        your smart home devices.</p>
-                                    <div class="price">
-                                        <p>$ 1099 USD</p>
-                                        <a href="/menu/">
-                                            <div class="buy">
-                                                BUY
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="swiper-wrapper" id="listProduct">
                     </div><br>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -456,7 +254,7 @@
                                         style="text-decoration: line-through;text-decoration-color: red; color: var(--primary);font-size: 1.6rem;position: relative;bottom: 25px;left: 50px;">
                                         $ 799 USD</sup><span style="font-size: 2.4rem;">$ 699 USD</span>
                                 </h1><br><br>
-                                <a href="/menu/">
+                                <a href="menu/">
                                     <div class="buy" style="width: 200px;margin: 0;padding: 10px 20px;">
                                         BUY
                                     </div>
@@ -595,114 +393,11 @@
     </section>
     <!--? ==== FOOTER ==== -->
     <footer>
-        <div class="container">
-            <p style="padding: 0 40px 30px 24px;">Hazen Technologies is a forward-thinking technology company committed
-                to innovating and engineering
-                cutting-edge solutions that shape the future. With a relentless dedication to excellence and a passion
-                for pushing the boundaries of what's possible, Hazen Technologies is at the forefront of creating
-                transformative products and services that drive progress in various industries.
-                <br>
-                Our Mission:
-                To empower individuals, businesses, and communities through technology by delivering innovative,
-                reliable, and sustainable solutions that enhance efficiency, convenience, and quality of life.
-                <br>
-                Our Vision:
-                To be a global leader in technology, pioneering advancements that address real-world challenges and
-                drive positive change. We aspire to inspire and empower the world with our technological innovations.
-            </p>
-            <hr style="border: 1.5px solid var(--quad);width: 96%; margin: auto;border-radius: 2px;">
-            <div class="footer-grid">
-                <div class="footer-item">
-                    <div class="nav-logo">
-                        <a href="/">
-                            <h1>CyberHazen™</h1>
-                        </a>
-                    </div>
-                    <p>We are a dynamic team of visionaries, engineers, and creatives who thrive on challenges. Our
-                        passion lies in developing technology-intensive products and services that shape the future.</p>
-                    <br>
-                    <h1>Special Event</h1>
-                    <a href="/about/" class="link">About</a>
-                    <a href="#" class="link">Special Event</a>
-                    <a href="#" class="link">Exclusive Event</a>
-                    <a href="#" class="link">Monthly Event</a>
-                    <a href="#" class="link">Yearly Event</a>
-                    <br>
-                    <h1>Home Electonics</h1>
-                    <a href="/menu/#phones" class="link">Hazen SmartHome Hub</a>
-                    <a href="/menu/#phones" class="link">Hazen E-Cars</a>
-                    <a href="/menu/#phones" class="link">Hazen AI Assist</a><br>
-                    <h1>Social Media</h1>
-                    <div class="sosmed">
-                        <a href="https://facebook.com"><i class="fa-brands fa-facebook-f link"></i></a>
-                        <a href="https://instagram.com"><i class="fa-brands fa-instagram link"></i></a>
-                        <a href="https://twitter.com"><i class="fa-brands fa-x-twitter link"></i></a>
-                        <a href="https://pinterest.com"><i class="fa-brands fa-pinterest-p link"></i></a>
-                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in link"></i></a>
-                        <a href="https://dribble.com"><i class="fa-brands fa-dribbble link"></i></a>
-                        <a href="https://fontawesome.com"><i class="fa-brands fa-font-awesome link"></i></a>
-                        <a href="https://izzulaverroes.github.io/cyberhazen"><i
-                                class="fa-brands fa-github link"></i></a>
-                        <a href="https://npm.com"><i class="fa-brands fa-npm link"></i></a>
-                        <a href="https://.com"><i class="fa-regular fa-globe link"></i></a><br>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <h1>Contact Us</h1>
-                    <h4>Phone Number :</h4>
-                    <p> +62 813 3644 6666</p>
-                    <h4>Email :</h4>
-                    <p> ceo@hazen.tech</p>
-                    <h4>Company Address:</h4>
-                    <p> Malang, East Java, Indonesia </p><br>
-                    <h1>Handphones</h1>
-                    <a href="/menu/#phones" class="link">Hazen Z-One</a>
-                    <a href="/menu/#phones" class="link">Hazen Z-One Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen Z-One Photography</a>
-                    <a href="/menu/#phones" class="link">Hazen G-One Titan</a>
-                    <a href="/menu/#phones" class="link">Hazen X-One</a>
-                    <a href="/menu/#phones" class="link">Hazen Flip-V</a><br>
-                    <h1>Computers</h1>
-                    <a href="/menu/#phones" class="link">Hazen Quantum Servers</a>
-                    <a href="/menu/#phones" class="link">Hazen Desktop Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen Gaming Titan Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen X-Titan Max</a>
-                    <a href="/menu/#phones" class="link">Hazen NovaX</a>
-                    <a href="/menu/#phones" class="link">Hazen Classic Desktop</a>
-                </div>
-                <div class="footer-item">
-                    <h1>Viewer Guides</h1>
-                    <a href="#home">Home</a>
-                    <a href="/menu/">Menu</a>
-                    <a href="/about/">About</a>
-                    <a href="/news/">News</a><br>
-                    <h1>Laptops</h1>
-                    <a href="/menu/#phones" class="link">Hazen Quantum Lite</a>
-                    <a href="/menu/#phones" class="link">Hazen Gaming Titan</a>
-                    <a href="/menu/#phones" class="link">Hazen Titan Servers</a>
-                    <a href="/menu/#phones" class="link">Hazen X-Desktop</a>
-                    <a href="/menu/#phones" class="link">Hazen Creator Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen Aero Slim</a>
-                    <a href="/menu/#phones" class="link">Hazen EdgeBook</a>
-                    <a href="/menu/#phones" class="link">Hazen EvoMax</a><br>
-                    <h1>Sounds</h1>
-                    <a href="/menu/#phones" class="link">Hazen VR Headset 3.0</a>
-                    <a href="/menu/#phones" class="link">Hazen Buds Pro</a>
-                    <a href="/menu/#phones" class="link">Hazen Pro Sounds </a>
-                    <a href="/menu/#phones" class="link">Hazen Sounds Mixer</a>
-                </div>
-            </div>
-            <hr style="border: 1.5px solid var(--quad); margin: auto;border-radius: 2px;">
-            <div style="display: flex;justify-content: space-between;">
-                <p style="text-align: left;padding: 10px 0;">Copyright © 2023 CyberHazen™ Technologies LTD &emsp;
-                    Privacy Policy | Terms of Use | Sales and Refunds </p>
-                <p style="padding: 10px 0;">Indonesia | United States</p>
-            </div>
-        </div>
     </footer>
     <!--! ==== FOOTER END ==== -->
+    <script type="module" src="js/navbar.js"></script>
+    <script type="module" src="js/footer.js"></script>
     <script type="module" src="js/index.js"></script>
-    <script type="text" src="js/tiltCard.jsx"></script>
 </body>
 
 </html>
