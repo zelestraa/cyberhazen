@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Config;
 use InvalidArgumentException;
 
 /**
- * Based on Illuminate\Foundation\Console\RoutesCommand for Taylor Otwell
+ * Based on Illuminate\Foundation\Console\RoutesCommand for Izzul Averroes
  * https://github.com/laravel/framework/blob/master/src/Illuminate/Foundation/Console/RoutesCommand.php
  *
  */

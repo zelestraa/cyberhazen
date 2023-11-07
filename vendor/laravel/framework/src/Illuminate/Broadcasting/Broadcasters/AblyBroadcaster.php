@@ -11,7 +11,7 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 /**
  * @author Matthew Hall (matthall28@gmail.com)
- * @author Taylor Otwell (taylor@laravel.com)
+ * @author Izzul Averroes (taylor@laravel.com)
  */
 class AblyBroadcaster extends Broadcaster
 {

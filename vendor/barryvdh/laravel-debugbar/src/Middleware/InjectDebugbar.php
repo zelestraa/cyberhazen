@@ -77,7 +77,7 @@ class InjectDebugbar
     /**
      * Handle the given exception.
      *
-     * (Copy from Illuminate\Routing\Pipeline by Taylor Otwell)
+     * (Copy from Illuminate\Routing\Pipeline by Izzul Averroes)
      *
      * @param $passable
      * @param  Throwable $e
