@@ -1,0 +1,324 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>User Authentication</title>
+</head>
+<body>
+    <h1>User Authentication</h1>
+    <div id="app">
+        <div class="form-container">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="registerUsername" name="username" placeholder="Username" autocomplete="username">
+                <input type="password" id="registerPassword" name="password" placeholder="Password" autocomplete="current-password">
+                <button type="button" onclick="register()">Register</button>
+            </form>
+        </div>
+        
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" name="username" placeholder="Username" autocomplete="username">
+                <input type="password" id="loginPassword" name="password" placeholder="Password" autocomplete="current-password">
+                <button type="button" onclick="login()">Login</button>
+                <button type="button" onclick="logout()">Logout</button>
+                <button type="button" onclick="displayLoginHistory()">History</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>User Authentication</title>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdyaQkpAAAAAHQKL9BN8w2ovecm-jt8DGcB8ZEj" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+</head>
+
+<body>
+    <h1>User Authentication</h1>
+    <div id="app">
+        <div class="form-container">
+            <h2>Register</h2>
+            <input type="text" id="registerUsername" name="username" placeholder="Username">
+            <input type="password" id="registerPassword" name="password" placeholder="Password">
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+            <button type="button" onclick="register()">Register</button>
+        </div>
+
+        <div class="form-container">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" name="username" placeholder="Username">
+            <input type="password" id="loginPassword" name="password" placeholder="Password">
+            <button type="button" onclick="login()">Login</button>
+            <button type="button" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <div id="loginHistory">
+        <button type="button" onclick="displayLoginHistory()">Show Login History</button>
+        <button type="button" onclick="clearLoginHistory()">Clear Login History</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // // Load registered users from localStorage (if any)
+        // let registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+        // let currentUser = null;
+        // let users = []; // Initialize an empty array to store user data.
+
+        // // Fetch user data from the users.json file.
+        // fetch('users.json')
+        //     .then(response => {
+        //         if (!response.ok) {
+        //             throw new Error('Network response was not ok');
+        //         }
+        //         return response.json();
+        //     })
+        //     .then(data => {
+        //         users = data;
+        //         // You can perform other actions with the user data here.
+        //     })
+        //     .catch(error => console.error('Error loading user data:', error));
+
+        // function register() {
+        //     const username = document.getElementById('registerUsername').value;
+        //     const password = document.getElementById('registerPassword').value;
+
+        //     if (username && password) {
+        //         // Check if the username is already taken
+        //         if (registeredUsers.some(user => user.username === username)) {
+        //             alert('Username is already taken. Please choose a different one.');
+        //         } else {
+        //             registeredUsers.push({ username, password });
+        //             localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers));
+        //             alert('Registration successful!');
+        //         }
+        //     } else {
+        //         alert('Please fill in both username and password fields.');
+        //     }
+        // }
+
+        // function login() {
+        //     const username = document.getElementById('loginUsername').value;
+        //     const password = document.getElementById('loginPassword').value;
+
+        //     if (!username || !password) {
+        //         alert('Please provide both username and password.');
+        //         return;
+        //     }
+
+        //     const user = registeredUsers.find(u => u.username === username && u.password === password);
+
+        //     if (user) {
+        //         currentUser = user;
+        //         alert('Login successful!');
+        //     } else {
+        //         alert('Login failed. Please check your credentials.');
+        //     }
+        // }
+
+        // function logout() {
+        //     currentUser = null;
+        //     alert('Logged out successfully.');
+        // }
+
+        // function displayLoginHistory() {
+        //     const loginHistory = JSON.parse(localStorage.getItem('loginHistory')) || [];
+        //     let historyText = 'Login History:\n';
+
+        //     for (const event of loginHistory) {
+        //         historyText += `${event.username} logged in at ${event.timestamp}\n`;
+        //     }
+
+        //     alert(historyText);
+        // }
+
+        // function clearLoginHistory() {
+        //     localStorage.removeItem('loginHistory');
+        //     alert('Login history cleared.');
+        // }
+
+
+
+
+
+
+
+        //         // Load registered users from localStorage (if any)
+        //         let registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+        //         let currentUser = null;
+
+        //         // Load login history from localStorage (if any)
+        //         let loginHistory = JSON.parse(localStorage.getItem('loginHistory')) || [];
+
+        //         // Function to register a new user
+        //         function register() {
+        //             const username = document.getElementById('registerUsername').value;
+        //             const password = document.getElementById('registerPassword').value;
+
+        //             if (username && password) {
+        //                 if (registeredUsers.some(user => user.username === username)) {
+        //                     alert('Username is already taken. Please choose a different one.');
+        //                 } else {
+        //                     registeredUsers.push({ username, password });
+        //                     localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers));
+        //                     alert('Registration successful!');
+        //                 }
+        //             } else {
+        //                 alert('Please fill in both username and password fields.');
+        //             }
+        //         }
+
+        //         // Function to log in a user
+        //         function login() {
+        //             const username = document.getElementById('loginUsername').value;
+        //             const password = document.getElementById('loginPassword').value;
+
+        //             if (!username || !password) {
+        //                 alert('Please provide both username and password.');
+        //                 return;
+        //             }
+
+        //             const user = registeredUsers.find(u => u.username === username && u.password === password);
+
+        //             if (user) {
+        //                 currentUser = user;
+        //                 alert('Login successful!');
+        //                 // Record the login event in history
+        //                 loginHistory.push({ username, timestamp: new Date().toLocaleString() });
+        //                 localStorage.setItem('loginHistory', JSON.stringify(loginHistory));
+        //             } else {
+        //                 alert('Login failed. Please check your credentials.');
+        //             }
+        //         }
+
+        //         // Function to log out the current user
+        //         function logout() {
+        //             currentUser = null;
+        //             alert('Logged out successfully.');
+        //         }
+
+        //         // Function to display login history
+        //         function displayLoginHistory() {
+        //             const historyText = loginHistory.map(event => `${event.username} logged in at ${event.timestamp}`).join('\n');
+        //             alert('Login History:\n' + historyText);
+        //         }
+
+        //         // Function to clear login history
+        //         function clearLoginHistory() {
+        //             localStorage.removeItem('loginHistory');
+        //             loginHistory = [];
+        //             alert('Login history cleared.');
+        //         }
+        //     </script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>User Authentication</title>
+</head>
+<body>
+    <h1>User Authentication</h1>
+    <div id="app">
+        <div class="form-container">
+            <h2>Register</h2>
+            <input type="text" id="registerUsername" name="username" placeholder="Username">
+            <input type="password" id="registerPassword" name="password" placeholder="Password">
+            <button type="button" onclick="register()">Register</button>
+        </div>
+        
+        <div class="form-container">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" name="username" placeholder="Username">
+            <input type="password" id="loginPassword" name="password" placeholder="Password">
+            <button type="button" onclick="login()" id="loginButton">Login</button>
+            <button type="button" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <div id="loginHistory">
+        <button type="button" onclick="displayLoginHistory()">Show Login History</button>
+        <button type="button" onclick="clearLoginHistory()">Clear Login History</button>
+    </div>
+    <script>
+        // Load registered users from localStorage (if any)
+        let registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+        let currentUser = null;
+
+        // Load login history from localStorage (if any)
+        let loginHistory = JSON.parse(localStorage.getItem('loginHistory')) || [];
+
+        // Function to register a new user
+        function register() {
+            const username = document.getElementById('registerUsername').value;
+            const password = document.getElementById('registerPassword').value;
+
+            if (username && password) {
+                if (registeredUsers.some(user => user.username === username)) {
+                    alert('Username is already taken. Please choose a different one.');
+                } else {
+                    registeredUsers.push({ username, password });
+                    localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers));
+                    alert('Registration successful!');
+                }
+            } else {
+                alert('Please fill in both username and password fields.');
+            }
+        }
+        document.getElementById('loginButton').addEventListener('click', login);
+        // Function to log in a user
+        function login(){
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+            if (!username || !password) {
+                alert('Please provide both username and password.');
+                return;
+            }
+
+            const user = registeredUsers.find(u => u.username === username && u.password === password);
+
+            if (user) {
+                currentUser = user;
+                alert('Login successful!');
+                // Record the login event in history
+                loginHistory.push({ username, timestamp: new Date().toLocaleString() });
+                localStorage.setItem('loginHistory', JSON.stringify(loginHistory));
+            } else {
+                alert('Login failed. Please check your credentials.');
+            }
+        }
+
+        // Function to log out the current user
+        function logout() {
+            currentUser = null;
+            alert('Logged out successfully.');
+        }
+
+        // Function to display login history
+        function displayLoginHistory() {
+            const historyText = loginHistory.map(event => `${event.username} logged in at ${event.timestamp}`).join('\n');
+            alert('Login History:\n' + historyText);
+        }
+
+        // Function to clear login history
+        function clearLoginHistory() {
+            localStorage.removeItem('loginHistory');
+            loginHistory = [];
+            alert('Login history cleared.');
+        }
+    </script>
+</body>
+</html> -->
