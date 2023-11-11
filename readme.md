@@ -63,10 +63,3 @@ Support Me on KoFi:
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=izzulaverroes&theme=onestar&no-frame=false&no-bg=true&margin-w=4)
-
-## Top Respositorys
-  <p align="center">
-     <a href="https://github.com/izzulaverroes/cyberhazen"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=cyberhazen&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
-    <a href="https://github.com/izzulaverroes/ibnuabbas"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ibnuabbas&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
-   <a href="https://github.com/izzulaverroes/ave"><img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=izzulaverroes&repo=ave&theme=react&bg_color=1F222E&title_color=61DAFB&hide_border=true&icon_color=61DAFB&show_icons=true" alt="github-readme-streak-stats"></a>
-  </p>
