@@ -5,14 +5,15 @@ let product = "";
 let news = "";
 let login = "";
 let cartVisibility = "";
-console.log(V)
-if(V == "CyberHazen™ | Home"){
+let logOut = "";
+
+if (V == "CyberHazen™ | Home") {
     home = "#";
     about = "about";
     product = "menu";
     news = "news";
     login = "login";
-    cartVisibility ="disactive";
+    cartVisibility = "disactive";
 }
 else if (V == "CyberHazen™ | About") {
     home = "../";
@@ -20,22 +21,59 @@ else if (V == "CyberHazen™ | About") {
     product = "../menu/";
     news = "../news/";
     login = "../login";
-    cartVisibility ="disactive";
-}else if(V == "CyberHazen™ | Product"){
+    cartVisibility = "disactive";
+} else if (V == "CyberHazen™ | Product") {
     home = "../";
     about = "../about";
     product = "#";
     news = "../news/";
     login = "../login";
-}else{
+} else {
     home = "../";
     about = "../about/";
     product = "../menu/";
     news = "#";
     login = "../login";
-    cartVisibility ="disactive";
+    cartVisibility = "disactive";
 }
 
+let loginBtn = `
+<a href="${login}">
+    <div class="login" id="encryptButtonLogin">
+        <div class="relative z-10 flex items-center gap-2">
+            <span id="textContentLogin">Login</span>
+        </div>
+        <span id="animationSpanLogin"
+            class="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-indigo-400/100 to-indigo-400/0 to-60% opacity-0 transition-opacity"></span>
+    </div>
+</a>`;
+
+let currentUser = null;
+function logout() {
+    currentUser = null;
+    alert('Logged out successfully.');
+    localStorage.removeItem('loggedUsers');
+    window.location.href = location.href;
+}
+
+
+var userData = localStorage.getItem('loggedUsers');
+//
+console.log(userData)
+if (userData != null) {
+    loginBtn = `
+    <a href="../profile">
+        <div class="login">
+            <div class="relative z-10 flex items-center gap-2">
+                <span id="textContentLogin" class="fa-solid fa-user"></span>
+            </div>
+            <span id="animationSpanLogin"
+                class="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-indigo-400/100 to-indigo-400/0 to-60% opacity-0 transition-opacity"></span>
+        </div>
+    </a>`;
+} else {
+
+}
 
 const navbarBox = document.querySelector('header');
 let navbar = document.createElement('div');
@@ -59,15 +97,7 @@ navbar.innerHTML =
                         </li>
                     </ul>
                     <div class="cart">
-                        <a href="${login}">
-                            <div class="login" id="encryptButtonLogin">
-                                <div class="relative z-10 flex items-center gap-2">
-                                    <span id="textContentLogin">Login</span>
-                                </div>
-                                <span id="animationSpanLogin"
-                                    class="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-indigo-400/100 to-indigo-400/0 to-60% opacity-0 transition-opacity"></span>
-                            </div>
-                        </a>
+                        ${loginBtn}
                         <div class="burger">
                             <input type="checkbox" id="burgerClick">
                             <span id="span1"></span>
@@ -78,3 +108,4 @@ navbar.innerHTML =
                 </nav>
             </div>`;
 navbarBox.appendChild(navbar);
+

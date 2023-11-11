@@ -1054,7 +1054,7 @@ footer {
       /* background: none; */
       background: white;
       padding: 4px 18px;
-      width: 90px;
+      /* width: 90px; */
       height: 40px;
       font-size: 20px;
       cursor: pointer;
@@ -1123,28 +1123,42 @@ footer {
 .form form {
       display: flex;
       flex-direction: column;
-      gap: 1em;
+      /* gap: 1em; */
       /* width: ; */
 }
 
-.form form input:not([type=submit]) {
+.form form input:not([type=submit]),
+.form form option,
+.form form select {
       height: 40px;
       border-radius: 8px;
       border-style: none;
       padding: 5px 10px;
       color: var(--secondary);
-      font-size: large;
+      font-size: 1em;
       transition: var(--transition);
 }
 
+/* .form form option:hover{
+      background-color: var(--primary);
+} */
 .form form input:not([type=submit])::placeholder {
       color: var(--secondary);
 }
 
-.form input:not([type=submit]):focus {
+.form input:not([type=submit]):focus,
+.form form select:focus,
+.form form option:focus {
       outline: rgba(var(--primary-rgb), .5) solid 3px;
       outline-offset: 2px;
       transition: color .8s linear;
+}
+
+form .input {
+      width: 100%;
+      margin: 10px 0 0 0;
+      display: flex;
+      flex-direction: column;
 }
 
 .form button {
@@ -1179,6 +1193,7 @@ footer {
       z-index: -1;
       transition: var(--transition);
       transform: translateY(100%);
+      border-radius: 100% 100% 0 0;
 }
 
 .form button:hover::before {
@@ -1220,21 +1235,11 @@ footer {
       transform: translateX(10px);
 }
 
-.remember,
-.remember label {
+form label {
       text-align: left;
       color: var(--secondary);
-}
-
-.remember input[type="checkbox"] {
-      appearance: none;
-      background-color: #fff;
-      outline-style: none;
-      height: 15px;
-      width: 15px;
-      margin: 0 auto;
-      border-radius: 4px;
-      cursor: pointer;
+      font-size: large;
+      margin-left: 10px;
 }
 
 .vision-box {

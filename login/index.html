@@ -18,19 +18,20 @@
                     <div class="tit">
                         <h1>Login</h1>
                     </div>
-                    <form id="login-form">
-                        <input type="username" name="name" id="username" placeholder="Username" autocomplete="off"
-                            required>
-                        <input type="password" name="password" id="password" placeholder="Password" autocomplete="off"
-                            required>
-                        <div class="remember">
-                            <input type="checkbox" name="remember" id="remember">
-                            <label for="remember">Remember Me</label>
+                    <form>
+                        <div class="input">
+                            <label for="loginUsername">Username</label>
+                            <input type="username" name="name" id="loginUsername" placeholder="Enter Your Username" autocomplete="current-username"
+                            required >
                         </div>
-                        <button type="submit" id="submitButton">Login</button>
+                        <div class="input">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" name="password" id="loginPassword" placeholder=" Input The Password" autocomplete="current-password"
+                                required>
+                        </div>
+                        <button type="button" id="submitButton" onclick="login()">Login</button>
                         <div class="registertoggle">
-                            <p>Dont have any account ?&nbsp;</p><a href=""> Register here</a>
-                            <p id="result">-</p>
+                            <p>Dont have any account ?&nbsp;</p><a href="register.html"> Register here</a>
                         </div>
                     </form>
                 </div>
@@ -41,13 +42,12 @@
                     <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                     <a href=""><i class="fa-brands fa-yahoo"></i></a>
                     <a href=""><i class="fa-brands fa-microsoft"></i></a>
-                    <i class="fa-solid fa-right-from-bracket" id="logout-button"></i>
                 </div>
             </div>
         </div>
     </section>
     <script type="module" src="../js/index.js"></script>
-    <script type="module" src="../js/login.js"></script>
+    <script src="script.js"></script>
     <script>
 
     </script>

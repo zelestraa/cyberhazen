@@ -22,7 +22,7 @@ function register() {
 
     if (password != reEnterPassword) {
         alert('Re Enter Password must be same at Password');
-    }else{
+    } else {
         if (email && username && displayName && born && gender && password) {
             if (registeredUsers.some(user => user.username === username)) {
                 alert('Username is already taken. Please choose a different one.');
@@ -34,6 +34,7 @@ function register() {
                 registeredUsers.push({ email, username, displayName, born, gender, password });
                 localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers));
                 alert('Registration successful!');
+                window.location.href = 'index.html';
             }
         } else {
             alert('Please fill in All form fields.');
@@ -63,26 +64,12 @@ function login() {
         localStorage.setItem('loginHistory', JSON.stringify(loginHistory));
         localStorage.setItem('loggedUsers', JSON.stringify(currentUser));
 
-        window.location.href = location.href;
+        window.location.href = '../';
     } else {
         alert('Login failed. Please check your credentials.');
     }
 }
 
-var userData = localStorage.getItem('loggedUsers');
-if (userData) {
-    // Parse the JSON string into an object
-    userData = JSON.parse(userData);
-    // Display the data in the HTML
-    document.getElementById('loggedInUser').innerHTML = userData.username;
-    document.getElementById('loggedInDisplay').innerHTML = userData.displayName;
-    document.getElementById('loggedInEmail').innerHTML = userData.email;
-    document.getElementById('loggedInGender').innerHTML = userData.gender;
-    document.getElementById('loggedInBorn').innerHTML = userData.born;
-
-} else {
-    document.getElementById('loggedInUser').innerHTML = 'No user data found in localStorage.';
-}
 
 // Function to log out the current user
 function logout() {

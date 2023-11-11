@@ -237,7 +237,6 @@ if (V === 'CyberHazen™ | Home') {
 }
 
 
-
 const TARGET_TEXT_ = "Login";
 
 const encryptButtonLogin = document.getElementById("encryptButtonLogin");
@@ -277,7 +276,8 @@ const stopScrambleLogin = () => {
     clearInterval(intervalRefLogin);
     textContentLogin.innerText = TARGET_TEXT_;
 };
-if (V !== 'CyberHazen™ | Login') {
+var userData = localStorage.getItem('loggedUsers');
+if (userData = null) {
     encryptButtonLogin.addEventListener("mouseenter", scrambleLogin);
     encryptButtonLogin.addEventListener("mouseleave", stopScrambleLogin);
 }
