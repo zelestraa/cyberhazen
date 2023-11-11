@@ -39,12 +39,6 @@
     </tr>
   </table>
 
-## What I'm Doing
-
-- 🏫 Studying on Averroes Digital Islamic School
-- 🌱 Learning JS, PHP Laravel & more
-
-
 ## Languages and Tools
 
 <p align="left"> <a href="https://github.com/izzulaverroes"><img src="https://skillicons.dev/icons?i=vscode,github,html,css,js,php,laravel"> </a> </p>
