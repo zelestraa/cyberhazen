@@ -44,9 +44,6 @@
 - 🏫 Studying on Averroes Digital Islamic School
 - 🌱 Learning JS, PHP Laravel & more
 
-Support Me on KoFi:
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/izzul)
 
 ## Languages and Tools
 
