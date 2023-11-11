@@ -59,7 +59,3 @@ Support Me on KoFi:
 <img title="stats" alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=izzulaverroes&theme=react&bg_color=151515&hide_border=true"/>
 </a> 
 </p>
-
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=izzulaverroes&theme=onestar&no-frame=false&no-bg=true&margin-w=4)
