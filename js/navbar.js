@@ -6,6 +6,7 @@ let news = "";
 let login = "";
 let cartVisibility = "";
 let logOut = "";
+let profile = "";
 
 if (V == "CyberHazen™ | Home") {
     home = "#";
@@ -14,6 +15,7 @@ if (V == "CyberHazen™ | Home") {
     news = "news";
     login = "login";
     cartVisibility = "disactive";
+    profile = "profile";
 }
 else if (V == "CyberHazen™ | About") {
     home = "../";
@@ -22,18 +24,21 @@ else if (V == "CyberHazen™ | About") {
     news = "../news/";
     login = "../login";
     cartVisibility = "disactive";
+    profile = "../profile";
 } else if (V == "CyberHazen™ | Product") {
     home = "../";
     about = "../about";
     product = "#";
     news = "../news/";
     login = "../login";
+    profile = "../profile";
 } else {
     home = "../";
     about = "../about/";
     product = "../menu/";
     news = "#";
     login = "../login";
+    profile = "../profile";
     cartVisibility = "disactive";
 }
 
@@ -62,7 +67,7 @@ var userData = localStorage.getItem('loggedUsers');
 console.log(userData)
 if (userData != null) {
     loginBtn = `
-    <a href="../profile">
+    <a href="${profile}">
         <div class="login">
             <div class="relative z-10 flex items-center gap-2">
                 <span id="textContentLogin" class="fa-solid fa-user"></span>

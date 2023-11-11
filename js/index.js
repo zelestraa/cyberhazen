@@ -72,14 +72,13 @@ else if (V == 'CyberHazen™ | Login') {
         document.title = "CyberHazen™ | Login"
     })
 }
-else {
+else if (V == 'CyberHazen™ | Profile'){
     document.querySelector('.home').style.background = "linear-gradient(0deg,rgba(255,255,255,1)0%,rgba(255,255,255,0.1)50%),url(../img/ggglitch.svg)"
-    X4.classList.add('l-active');
     window.addEventListener('blur', () => {
         document.title = "I am alone :("
     })
     window.addEventListener('focus', () => {
-        document.title = "CyberHazen™ | Contact"
+        document.title = "CyberHazen™ | Profile"
     })
 };
 
