@@ -64,6 +64,16 @@ else if (V == 'CyberHazen™ | Product') {
         document.title = "CyberHazen™ | Product"
     })
 }
+else if (V == 'CyberHazen™ | Contact') {
+    X4.classList.add('l-active');
+    document.querySelector('.home').style.background = "linear-gradient(0deg,rgba(255,255,255,1)0%,rgba(255,255,255,0.1)50%),url(../img/ggglitch.svg)"
+    window.addEventListener('blur', () => {
+        document.title = "I am alone :("
+    })
+    window.addEventListener('focus', () => {
+        document.title = "CyberHazen™ | Profile"
+    })
+}
 else if (V == 'CyberHazen™ | Login') {
     window.addEventListener('blur', () => {
         document.title = "I am alone :("
@@ -72,7 +82,7 @@ else if (V == 'CyberHazen™ | Login') {
         document.title = "CyberHazen™ | Login"
     })
 }
-else if (V == 'CyberHazen™ | Profile'){
+else if (V == 'CyberHazen™ | Profile') {
     document.querySelector('.home').style.background = "linear-gradient(0deg,rgba(255,255,255,1)0%,rgba(255,255,255,0.1)50%),url(../img/ggglitch.svg)"
     window.addEventListener('blur', () => {
         document.title = "I am alone :("

@@ -32,11 +32,19 @@ else if (V == "CyberHazen™ | About") {
     news = "../news/";
     login = "../login";
     profile = "../profile";
-} else {
+} else if (V == "CyberHazen™ | Contact") {
     home = "../";
     about = "../about/";
     product = "../menu/";
-    news = "#";
+    news = "../news";
+    login = "../login";
+    profile = "../profile";
+    cartVisibility = "disactive";
+} else if (V == "CyberHazen™ | Profile") {
+    home = "../";
+    about = "../about";
+    product = "../menu";
+    news = "../news";
     login = "../login";
     profile = "../profile";
     cartVisibility = "disactive";
